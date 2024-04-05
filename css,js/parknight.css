@@ -1,0 +1,109 @@
+@charset "utf-8";
+@font-face {
+    font-family: ichigo;
+    src: url(../font/Icing_soda_ver.2.02/Icing_soda_ver.2.02/Icing\ soda2_濃.ttf) format(truetype);
+}
+@font-face {
+    font-family: present;
+    src: url(../font/PresentAnthem/PresentAnthem-Regular.ttf) format(truetype);
+}  
+@font-face {
+    font-family: hannari;
+    src: url(../font/hannari/HannariMincho-Regular.otf) format(OpenType);
+}
+  
+
+body{
+    color: #1c1913;
+    color: #fff;
+    font-family: "hannari",sans-serif;
+}
+.logo{
+    color: #fff;
+    font-family: "ichigo",sans-serif;
+}
+header {
+    background: #000000;
+} 
+.hamburger .bar {
+    background: #ffffff;
+}
+h1 a{
+    font-family: "present",sans-serif;
+    color: #ffe9a7;
+    width: 300px;
+    font-size: 36px;
+    position: relative; 
+    text-decoration: none;
+}
+#parklink::after {
+    background-color: #7d7d7d;
+    bottom: 5px; 
+    content: ""; 
+    height: 3px; 
+    left: 0; 
+    opacity: 0; 
+    position: absolute; 
+    transition: all .3s; 
+    width: 100%;
+  }
+h2{
+    margin-bottom: 20px;
+}
+.names{
+    color: #ffe9a7;
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(0, 0, 0,0);
+    border-bottom: 1px dotted rgb(0, 0, 0);
+    display: inline-block;
+    font-family: "ichigo",sans-serif;
+}
+main p{
+    padding: 30px;
+}
+.hidari{
+    margin: 20px;
+    border-top: #000 solid 1px;
+    border-bottom: #000 solid 1px;
+}
+.bg_pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3d3d3d;
+    opacity: 1;
+    z-index: -1;
+  }
+  .Boxes {
+    background-image:  linear-gradient(#4c4c4c 2px, transparent 2px), linear-gradient(to right, #4c4c4c 2px, #3d3d3d 2px);
+    background-size: 40px 40px;
+  }
+#footer{
+    padding-top: 550px;
+}
+#access p strong{
+    background-color: rgb(0, 0, 0,0);
+    border-left: #000 4px solid;
+    padding-left: 5px;
+  }  
+#access{
+    border: #1c1b1a 2px solid;
+    color: #fff;
+    margin: 80px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #484b48;
+}  
+#access h1{
+    font-family: "hannari",sans-serif;
+}
+#access p a{
+    color: #ffffff;
+  }  
+  #access p a:hover{
+    color: #ffffff5c;
+  }

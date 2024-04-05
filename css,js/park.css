@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+main{
+    text-align: center;
+}
+main h1{
+    padding: 100px;
+    font-size: 50px;
+}
+#parklink{
+    margin: auto;
+    width: 200px;
+    font-size: 36px;
+    position: relative; 
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+#parklink::after {
+    background-color: #ffc107;
+    bottom: 5px; 
+    content: ""; 
+    height: 3px; 
+    left: 0; 
+    opacity: 0; 
+    position: absolute; 
+    transition: all .3s; 
+    width: 100%;
+  }
+  #parklink:hover::after {
+    bottom: -4px;
+    opacity: 1; 
+  }
+
+#top .big_box{
+    padding: 30px;
+}
+#footer{
+    padding-top: 1400px;
+}
+#access h1{
+    padding: 50px 0px;
+}
+.names{
+    color: pink;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}  
+.big_box{
+    font-size: large;
+    width: 400px;
+    margin: auto;
+}
+.hidari{
+    text-align: left;
+}
+h3{
+    border-left: 5px pink solid;
+    padding-left: 2px;
+}
+.park_box img{
+    width: 370px;
+    height: 270px;
+    border-radius: 100px;
+    margin: 10px 0 10px 0;
+}
+#bottom{
+    padding-bottom: 10px;
+}
