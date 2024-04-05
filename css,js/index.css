@@ -1,0 +1,428 @@
+@charset "UTF-8";
+@font-face {
+  font-family:banana;
+  src: url(../font/YDW_bananaslip_plus/YDW_bananaslip_plus/YDWbananaslipplus.otf) format(OpenType);
+}
+@font-face {
+  font-family: ichigo;
+  src: url(../font/Icing_soda_ver.2.02/Icing_soda_ver.2.02/Icing\ soda2_濃.ttf) format(truetype);
+}
+@font-face {
+  font-family: Gt;
+  src: url(../font/851Gkktt_005.ttf) format(truetype);
+}
+@font-face {
+  font-family: dokidoki;
+  src: url(../font/DokiDokiFont2/DokiDokiFont2/DokiDokiFantasia.otf) format(OpenType);
+}
+@font-face {
+  font-family: present;
+  src: url(../font/PresentAnthem/PresentAnthem-Regular.ttf) format(truetype);
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: bottom;
+  background: transparent;
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
+}
+
+body {
+  font-family: "banana",sans-serif;
+  color: #555;
+  font-feature-settings: "palt";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*  hamberger   */
+
+header {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  padding: 0 20px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-family: "dokidoki",sans-serif;
+  color: #c6dbd2;
+}
+
+.hamburger {
+  display: none;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.hamburger .bar-top {
+  transform: translate(0, -12px);
+}
+
+.hamburger .bar-bottom {
+  transform: translate(0, 12px);
+}
+
+.checkbox:checked ~ .hamburger .bar-middle {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .hamburger .bar-top {
+  transform: translate(0, 0) rotate(45deg);
+}
+
+.checkbox:checked ~ .hamburger .bar-bottom {
+  transform: translate(0, 0) rotate(-45deg);
+}
+
+.checkbox {
+  display: none;
+}
+
+.nav-menu {
+  position: static;
+  width: 500px;
+}
+@media screen and (max-width: 700px) {
+  .nav-menu {
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    color: #fff;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s;
+  }
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .nav-menu ul {
+    margin-top: 100px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-menu li {
+    margin-bottom: 30px;
+  }
+}
+
+.nav-menu a {
+  text-align: center;
+  font-size: 20px;
+}
+
+.checkbox:checked ~ .nav-menu {
+  left: 0;
+}
+
+main {
+  height: 1000px;
+}
+.hamburger {
+  display: none;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .hamburger {
+    display: flex;
+  }
+}
+.nav-menu {
+  width: 500px;
+}
+@media screen and (max-width: 700px) {
+  .nav-menu {
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    color: #fff;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s;
+  }
+}
+.nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .nav-menu ul {
+    margin-top: 100px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-menu li {
+    margin-bottom: 30px;
+  }
+}
+/*  hamberger   */
+
+#resize{
+  width: 100%;
+  height: 80%;
+}
+#index{
+  font-family: "present",sans-serif;
+  color: #000;
+  position: relative;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  margin:0;
+}
+footer{
+  text-align: center;
+}
+#access{
+  border: #ffe9a7 2px solid;
+  margin: 80px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+#access h4{
+  background-color: rgba(255, 192, 203, 0.7);
+  padding: 0 5px 0 5px;
+  display:inline-block;
+  border-radius: 20px;
+  margin: 5px;
+}
+#access-2{
+  margin-top: 20px;
+}
+.left p{
+  margin-left:  300px;
+}  
+@media screen and (max-width:950px) {
+  .left p{
+    margin-left:  0px;
+  }  
+}
+#access p{
+  padding-bottom: 5px;
+}
+#access p strong{
+  background-color: beige;
+}
+.left{
+  text-align: left;
+  padding-top: 10px;
+}
+#catchcopy{
+  text-align: center;
+  margin-top: -130px;
+}
+#catchcopy h1{
+  font-family: "ichigo",sans-serif;
+  font-size: 52px;
+  display:inline-block;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 60px;
+  padding: 5px 10px 5px 10px ;
+}
+#news h1{
+  font-size: 30px;
+  padding: 0 5px 0 5px;
+  margin: 20px;
+  display:inline-block;
+  background-color: beige;
+}
+#news{
+  text-align: center;
+  margin: auto;
+  margin: 50px;
+  border: #ffe9a7 solid 3px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+#news p{
+  text-align: left;
+  margin: 30px;
+  border-bottom: #000 1px dotted;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+}
+.box{
+  margin: 50px;
+  border: #ffe9a7 solid 3px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: beige;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.29);
+}
+.box:hover{
+  opacity: 0.8;
+}
+.box:active {
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-bottom: none !important;
+  }
+.box h1,.box p{
+  margin: 50px;
+  z-index: 5;
+}
+#access h1{
+  margin: 50px;
+  z-index: 5;
+}
+#footer h1{
+  font-size: 200%;
+}
+
+
+/* 桜を表示するコンテナのスタイル */
+.cherry-blossom-container {
+  position: relative;
+  height: 30vh; /* コンテナの高さ */
+  width: 100%; /* コンテナの横幅 */
+  overflow: hidden; /* コンテナからはみ出した要素を隠す */
+}
+
+/* 桜の花びらのスタイル */
+.petal {
+  position: absolute;
+  background-color: #ffc0cb; /* 花びらの色 */
+  border-radius: 150% 0 150% 0;
+  animation: animate-petal 10s linear;
+}
+
+.petal::after {
+  content: "";
+  position: absolute;
+  top: -14%;
+  left: -10%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ffc0cb;
+  border-radius: 150% 0 150% 0;
+  transform: rotate(15deg);
+}
+
+/* 花びらが降るアニメーション */
+@keyframes animate-petal {
+  0% {
+    top: 0;
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 100vh;
+    transform: rotate(3000deg);
+  }
+}
+
+
+.bg_pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffe9a7;
+  opacity: 0.4;
+  z-index: -1;
+}
+.Boxes {
+  background-image:  linear-gradient(#ffc107 2px, transparent 2px), linear-gradient(to right, #ffc107 2px, #ffe9a7 2px);
+  background-size: 40px 40px;
+}
+
+.wrap{ display: flex; flex-wrap: wrap; }
+
+#access p a{
+  color: #555;
+}
+#access p a:hover{
+  color: #5555555c;
+}

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@font-face {
+  font-family:Corporate ;
+  src: url("font/Corporate-Logo-Rounded-Bold-ver3/Corporate-Logo-Rounded-Bold-ver3/Corporate-Logo-Rounded-Bold-ver3.otf") format(Opentype);
+}
+
+main{
+    padding-top: 90px;
+    
+}
+h1{
+    color: pink;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.yatai_1{
+    border-radius:100px;
+    margin-top: 50px;
+}
+.big_box{
+    text-align: center;
+}
+.small_box{
+text-align: center;
+}
+.box_2{
+    font-size: x-large;
+    margin-top: 60px;
+}
+.box_3{
+    font-size: x-large;
+   text-align: center;
+    margin-top: 60px;
+
+}
+.hiroba{
+    border-radius:100px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.hiroba_2{
+    border-radius:100px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.sonota{
+    margin-top: 20px;
+}
+.time{
+    margin-top: 20px;
+}
+.ivent{
+    margin-top: 25px;
+}
+.kikan{
+    text-decoration: underline 3px chocolate;
+}
+.day{
+    margin-bottom: 10px;
+    margin-right: 130px;
+    text-decoration: underline 3px chocolate;
+}
+#footer{
+    padding-top: 500px;
+}
+@media screen and (max-width: 800px) {
+    
+    .box_2{
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 20px;
+    }
+    .box_3{
+        font-size: 20px;
+    }
+    .hiroba{
+       margin-left: -5px;
+    }
+    .day{
+        margin-bottom: 10px;
+        margin-right: 100px;
+    }
+    #footer h1{
+        font-size: 200%;
+    }
+    #access h1{
+        margin: 50px 0px;
+    }
+    #footer{
+        margin-top: 400px;
+    }
+}
